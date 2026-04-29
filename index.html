@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MenteClara — Salud Mental</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="encabezado">
+    <nav class="nav">
+      <a href="#inicio" class="logo">🌿 Mas alla de la mente.</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links" id="navLinks"><li><a href="#inicio">Inicio</a></li><li><a href="#consejos">Consejos</a></li><li><a href="#recursos">Recursos</a></li><li><a href="#reflexion">Reflexión</a></li></ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-contenido">
+      <p class="hero-etiqueta">Bienestar emocional</p>
+      <h1 class="hero-titulo">Tu mente merece<br /><em>el mismo cuidado</em><br />que tu cuerpo</h1>
+      <p class="hero-desc">Recursos, consejos y herramientas para cultivar tu bienestar mental cada día.</p>
+      <a href="#consejos" class="boton-primario">Explorar consejos</a>
+    </div>
+    <div class="hero-deco" aria-hidden="true"></div>
+  </section>
+
+  <section class="seccion" id="consejos">
+    <h2 class="seccion-titulo">Prácticas de bienestar</h2>
+    <p class="seccion-subtitulo">Pequeños hábitos con gran impacto en tu vida diaria</p>
+    <div class="tarjetas">
+      <article class="tarjeta">
+        <span class="tarjeta-icono">🌬️</span>
+        <h3>Respiración consciente</h3>
+        <p>Dedica 5 minutos al día a respirar profundo. Inhala 4 segundos, retén 4, exhala 6.</p>
+      </article>
+      <article class="tarjeta">
+        <span class="tarjeta-icono">🚶</span>
+        <h3>Movimiento diario</h3>
+        <p>Una caminata de 20 minutos reduce el estrés y mejora el estado de ánimo notablemente.</p>
+      </article>
+      <article class="tarjeta">
+        <span class="tarjeta-icono">🌙</span>
+        <h3>Higiene del sueño</h3>
+        <p>Mantén horarios regulares y evita pantallas 1 hora antes de dormir.</p>
+      </article>
+      <article class="tarjeta">
+        <span class="tarjeta-icono">🤝</span>
+        <h3>Conexión social</h3>
+        <p>Mantener vínculos significativos es uno de los mayores predictores de bienestar.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="seccion seccion-alt" id="recursos">
+    <h2 class="seccion-titulo">Recursos de apoyo</h2><ul class="recursos-lista">
+      <li class="recurso-item">
+        <span class="recurso-icono">📞</span>
+        <div><strong>Línea de crisis emocional</strong>
+          <p>Atención gratuita 24/7 — <a href="tel:800-290-0024">800 290 0024</a></p></div>
+      </li>
+      <li class="recurso-item">
+        <span class="recurso-icono">📖</span>
+        <div><strong>Lecturas recomendadas</strong>
+          <p>"El poder del ahora" — Eckhart Tolle · "Mindfulness en la vida cotidiana" — Kabat-Zinn</p></div>
+      </li>
+      <li class="recurso-item">
+        <span class="recurso-icono">🧘</span>
+        <div><strong>Apps de meditación</strong>
+          <p>Headspace · Calm · Insight Timer (versión gratuita disponible)</p></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="seccion" id="reflexion">
+    <h2 class="seccion-titulo">Espacio de reflexión</h2>
+    <p class="seccion-subtitulo">¿Cómo te sientes hoy? Escríbelo sin juicio.</p>
+    <div class="reflexion-box">
+      <div class="estado-botones"><button class="estado-btn" data-estado="bien">😊 Bien</button><button class="estado-btn" data-estado="regular">😐 Regular</button><button class="estado-btn" data-estado="mal">😔 Difícil</button></div>
+      <textarea class="reflexion-texto" id="reflexionTexto" placeholder="Escribe aquí tus pensamientos..." maxlength="300" rows="5"></textarea>
+      <div class="reflexion-footer"><span class="contador" id="contador">0 / 300</span><button class="boton-secundario" id="btnGuardar">Guardar reflexión</button></div>
+      <p class="reflexion-mensaje" id="reflexionMensaje" hidden></p>
+    </div>
+  </section>
+
+  <footer class="pie">
+    <p>🌿 Mas alla de la mente · Proyecto educativo · Hecho con cuidado</p>
+    <p class="pie-aviso">Si estás en crisis, busca ayuda profesional. No estás solo.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
